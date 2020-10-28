@@ -19,12 +19,9 @@ class MainViewModel(
     private val METHOD : String = "getLottoNumber"
     private val LOTTO_ROUND = 929
 
-
     private val _lottoNumber = MutableLiveData<Resource<LottoData>>() // ViewModel에서 접근 가능한 데이터
     val lottoNumber : MutableLiveData<Resource<LottoData>> // UI에서 접근이 가능한 데이터
     get() = _lottoNumber
-
-    // TODO Coroutine으로 Retrofit 처리하기
 
     fun getLottoNumber() : LiveData<Resource<LottoData>>{
         return lottoNumber

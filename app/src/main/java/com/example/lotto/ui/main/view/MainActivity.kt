@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
     private lateinit var mainViewModel : MainViewModel
 
+    // getApplicationContext를 사용하는 것을 추천
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -67,8 +68,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
-
 
     private fun setupObserver(){
         mainViewModel.getLottoNumber().observe(this, Observer {

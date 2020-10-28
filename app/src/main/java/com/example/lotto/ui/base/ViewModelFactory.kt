@@ -18,5 +18,4 @@ class ViewModelFactory(private val retrofitHelper: RetrofitHelper) : ViewModelPr
         }
         throw IllegalArgumentException("Unknown class name")
     }
-
 }
