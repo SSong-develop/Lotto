@@ -1,0 +1,6 @@
+com/example/lotto/databinding/ActivityMainBinding.java
+ com.example.lotto.databinding.ActivityMainBinding
+com/example/lotto/BuildConfig.java
+ com.example.lotto.BuildConfig
+com/example/lotto/DataBindingTriggerClass.java
+ com.example.lotto.DataBindingTriggerClass

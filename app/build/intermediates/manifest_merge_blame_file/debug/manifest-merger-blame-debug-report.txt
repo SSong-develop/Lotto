@@ -1,0 +1,73 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.lotto"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" >
+11-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:5:5-85
+11-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:5:22-64
+12    </uses-permission>
+13
+14    <application
+14-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:6:5-21:19
+15        android:allowBackup="true"
+15-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:7:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.3.2] C:\Users\thdgn\.gradle\caches\transforms-2\files-2.1\b081bd3d0d501fedec1c03fc43cd9326\core-1.3.2\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:extractNativeLibs="false"
+19        android:icon="@mipmap/ic_launcher"
+19-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:8:9-43
+20        android:label="@string/app_name"
+20-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:9:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:10:9-54
+22        android:supportsRtl="true"
+22-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:11:9-35
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:12:9-40
+25        <activity
+25-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:13:9-129
+26            android:name="com.example.lotto.ui.main.view.MainActivity"
+26-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:13:19-60
+27            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+27-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:13:61-117
+28        <activity
+28-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:14:9-20:20
+29            android:name="com.example.lotto.ui.main.view.Splash"
+29-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:14:19-54
+30            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+30-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:14:55-111
+31            <intent-filter>
+31-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:15:13-19:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:16:17-69
+32-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:16:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:18:17-77
+34-->C:\Users\thdgn\AndroidStudioProjects\Lotto\app\src\main\AndroidManifest.xml:18:27-74
+35            </intent-filter>
+36        </activity>
+37
+38        <provider
+38-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\thdgn\.gradle\caches\transforms-2\files-2.1\33ec54b30dd432701b9f102d7a4907fd\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+39            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+39-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\thdgn\.gradle\caches\transforms-2\files-2.1\33ec54b30dd432701b9f102d7a4907fd\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+40            android:authorities="com.example.lotto.lifecycle-process"
+40-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\thdgn\.gradle\caches\transforms-2\files-2.1\33ec54b30dd432701b9f102d7a4907fd\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+41            android:exported="false"
+41-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\thdgn\.gradle\caches\transforms-2\files-2.1\33ec54b30dd432701b9f102d7a4907fd\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+42            android:multiprocess="true" />
+42-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\thdgn\.gradle\caches\transforms-2\files-2.1\33ec54b30dd432701b9f102d7a4907fd\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+43    </application>
+44
+45</manifest>
