@@ -28,25 +28,6 @@ class MainViewModel(
     }
 
     /**
-     * 일반적인 retrofit 호출방법
-     */
-    fun fetchLottoNormal(){
-        /*val randomRound = (Math.random() * LOTTO_ROUND + 1).toInt().toString()
-        RetrofitClient.getService().getLotto(METHOD,randomRound).enqueue(object : Callback<LottoData> {
-            override fun onResponse(call: Call<LottoData>, response: Response<LottoData>) {
-                _lottoNumber.value = Resource.success(response.body())
-                Log.i("MainViewModel",randomRound)
-                Log.i("MainViewModel",_lottoNumber.value.toString())
-            }
-
-            override fun onFailure(call: Call<LottoData>, t: Throwable) {
-                _lottoNumber.value = Resource.error("Something Wrong",null)
-                Log.i("MainViewModel",t.message.toString())
-            }
-        })*/
-    }
-
-    /**
      * ViewModelFactory pattern을 이용해 custom ViewModel을 생성했습니다.
      * 매개변수로 받아오는 것은 MainRepository이며 이 repo를 사용해 네트워킹을 대신 해줄 수 있습니다.
      * 단점으로는 MainViewModel이 호출되는 단 한번에만 호출되기 때문에 데이터를 단 한번만 가져와야 되는 경우에
@@ -63,14 +44,5 @@ class MainViewModel(
     fun getLottoCoroutineMine() = viewModelScope.launch {
         val repo = MainRepository(RetrofitHelper(RetrofitBuilder.retrofitService))
         _lottoNumber.value = Resource.success(repo.getLottoCoroutines())
-    }
-
-    /**
-     * Builder를 통해 직접 호출했다.
-     * 단점 : ViewModel에서 네트워크를 직접 호출하기 때문에 의존성의 문제가 생긴다.
-     */
-    fun fetchLottoCoroutine() = viewModelScope.launch {
-        val randomRound = (Math.random() * LOTTO_ROUND + 1).toInt().toString()
-        _lottoNumber.value = Resource.success(RetrofitBuilder.retrofitService.getLottoCoroutine(METHOD,randomRound))
     }
 }
