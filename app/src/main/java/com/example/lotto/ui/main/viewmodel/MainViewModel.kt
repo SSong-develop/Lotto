@@ -33,6 +33,7 @@ class MainViewModel(
      * 단점으로는 MainViewModel이 호출되는 단 한번에만 호출되기 때문에 데이터를 단 한번만 가져와야 되는 경우에
      * 사용하는 것이 바람직해 보입니다.
      */
+
     fun onlyOneCall() = viewModelScope.launch {
         _lottoNumber.value = Resource.success(mainRepository.getLottoCoroutines())
     }
